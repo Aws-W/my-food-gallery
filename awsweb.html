@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soups & Momo's</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 3fr 1fr;
+            grid-template-rows: auto auto;
+            gap: 10px;
+            height: 100vh;
+            padding: 10px;
+        }
+
+        .frame {
+            border: 2px solid black;
+            padding: 10px;
+            background-color: yellow;
+            overflow: auto;
+            text-align: center;
+        }
+
+        /* Left Side - List */
+        .left-frame {
+            grid-row: span 2;
+            text-align: left;
+            padding: 20px;
+            font-weight: bold;
+        }
+
+        /* Center - Image Grid */
+        .image-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, auto);
+            gap: 10px;
+            align-items: center;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border: 2px solid black;
+        }
+
+        .image-container img:nth-child(3) {
+            grid-column: span 2;
+        }
+
+        /* Right Side - Table */
+        .right-frame {
+            grid-row: span 2;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: black;
+            color: white;
+            text-align: center;
+        }
+
+        th, td {
+            border: 1px solid white;
+            padding: 8px;
+        }
+
+        /* Hyperlink */
+        .hyperlink {
+            grid-column: span 3;
+            text-align: center;
+            padding: 10px;
+        }
+
+        a {
+            display: inline-block;
+            padding: 10px;
+            background: blue;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            background: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Left Frame (List) -->
+        <div class="frame left-frame">
+            <h2>Soups & Momo's</h2>
+            <h3>Soup's</h3>
+            <ul>
+                <li>Manchow Soup</li>
+                <li>Vegetable Soup</li>
+                <li>Crab Soup</li>
+            </ul>
+            <h3>Momo's</h3>
+            <ul>
+                <li>Veg Momo's</li>
+                <li>Chicken Momo's</li>
+            </ul>
+        </div>
+
+        <!-- Center Frame (Images) -->
+        <div class="frame">
+            <div class="image-container">
+                <img src="food1.jpg" alt="Food 1">
+                <img src="food2.jpg" alt="Food 2">
+                <img src="food3.jpg" alt="Food 3">
+                <img src="food4.jpg" alt="Food 4">
+                <img src="food5.jpg" alt="Food 5">
+            </div>
+        </div>
+
+        <!-- Right Frame (Table) -->
+        <div class="frame right-frame">
+            <h2>Price List</h2>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Manchow Soup</td>
+                    <td>₱30</td>
+                </tr>
+                <tr>
+                    <td>Vegetable Soup</td>
+                    <td>₱40</td>
+                </tr>
+                <tr>
+                    <td>Chicken Soup</td>
+                    <td>₱50</td>
+                </tr>
+                <tr>
+                    <td>Crab Soup</td>
+                    <td>₱45</td>
+                </tr>
+                <tr>
+                    <td>Veg Momo's</td>
+                    <td>₱50</td>
+                </tr>
+                <tr>
+                    <td>Chicken Momo's</td>
+                    <td>₱70</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- Hyperlink Section -->
+    <div class="hyperlink">
+        <a href="https://www.google.com" target="_blank">Chettinad Soups & Momo's</a>
+    </div>
+</body>
+</html>
