@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h2>Food Gallery Made By 3mk Aws The Goat Qaher al behar wl ghzat </h2>
+    <style>
+        body {
+            background-color: yellow;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            width: 90%;
+            margin-top: 20px;
+        }
+        .list-container {
+            flex: 1;
+            text-align: left;
+            background-color: white;
+            padding: 10px;
+            border: 2px solid black;
+            max-width: 200px;
+        }
+        .list-container ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+        .image-gallery {
+            flex: 2;
+            text-align: center;
+        }
+        .image-grid {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .top-images {
+            display: flex;
+            gap: 10px;
+        }
+        .bottom-images {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .image-grid img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 2px solid black;
+        }
+        .table-container {
+            flex: 1;
+            background-color: white;
+            padding: 10px;
+            border: 2px solid black;
+            max-width: 250px;
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+        th {
+            background-color: lightgray;
+        }
+        .link {
+            margin-top: 15px;
+        }
+        .link a {
+            display: block;
+            padding: 10px;
+            background-color: blue;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            width: fit-content;
+            margin: auto;
+            border-radius: 5px;
+        }
+        .link a:hover {
+            background-color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Food Gallery</h2>
+        
+        <div class="content">
+            <div class="list-container">
+                <h3>Food Categories</h3>
+                <ul>
+                    <li>Vegetarian</li>
+                    <li>Seafood</li>
+                    <li>Fast Food</li>
+                    <li>Desserts</li>
+                    <li>Soups</li>
+                </ul>
+            </div>
+
+            <div class="image-gallery">
+                <div class="image-grid">
+                    <div class="top-images">
+                        <img src="food1.jpg" alt="Food Image 1">
+                        <img src="food2.jpg" alt="Food Image 2">
+                    </div>
+                    <div class="bottom-images">
+                        <img src="food3.jpg" alt="Food Image 3">
+                        <img src="food4.jpg" alt="Food Image 4">
+                        <img src="food5.jpg" alt="Food Image 5">
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-container">
+                <h3>Food Table</h3>
+                <table>
+                    <tr>
+                        <th>Food Name</th>
+                        <th>Type</th>
+                        <th>Calories</th>
+                    </tr>
+                    <tr>
+                        <td>Pizza</td>
+                        <td>Main Course</td>
+                        <td>285 kcal</td>
+                    </tr>
+                    <tr>
+                        <td>Salmon</td>
+                        <td>Main Course</td>
+                        <td>208 kcal</td>
+                    </tr>
+                    <tr>
+                        <td>Chicken Wings</td>
+                        <td>Snack</td>
+                        <td>250 kcal</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://youtu.be/aII2UjsGdbI?si=Ge18jL3PYM1UULsI" target="_blank">Corn Soup Recipe</a>
+        </div>
+    </div>
+</body>
+</html>
